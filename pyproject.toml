@@ -1,0 +1,12 @@
+[project]
+name = "llm-tldr-gui"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-core>=0.3.72",
+    "langchain-ollama>=0.3.6",
+    "pyperclipfix>=1.9.4",
+    "streamlit>=1.47.1",
+]
