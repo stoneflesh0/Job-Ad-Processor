@@ -1,17 +1,17 @@
 # Job Advertisement Processing Tool
 
-This is a Python script that utilizes `langchain_core` and `streamlit` libraries to process job advertisements using Ollama. The tool allows users to paste job ad text or import it from a clipboard and generate either a TLDR summary of the job ad or a professional profile paragraph for their CV.
+This is a Python script that utilizes `langchain_core` and `streamlit` libraries to process job advertisements using Ollama. The tool allows users to paste job advertisement text or import it from a clipboard and generates a TLDR summary of the job ad and a professional profile paragraph for their CV using the input from INPUT.txt.
 
 ## Features
 
-- **TLDR Summary**: Summarizes lengthy job ads into concise sections, including required languages/tools, skills, and a brief job summary.
+- **TLDR Summary**: Summarizes lengthy job ads.
 - **Professional Profile Paragraph**: Attempts to generate a professional profile paragraph using the information inserted into INPUT.txt
 - **User Interface**: Built with Streamlit for an intuitive and user-friendly interface.
 
 ## Requirements
 
 - Ollama running locally
-- llama3.2:3b model downloaded
+- gemma3n:e4b model downloaded
 
 ## Usage
 
@@ -33,10 +33,7 @@ To make streamlit not share statistics:
 
 4. The Streamlit app will open in your web browser.
 
-5. Input or paste the text into the text field and press Send for it to be processed by the LLM.
-Button actions:
-   - **Send**: Sends the current text area content for processing.
-   - **Paste**: Pastes content from your clipboard.
-   - **Gen Profile**: Generates a professional profile paragraph for your CV (might fail if clipboard manager is not setup (ex: missing xclip or wl-clipboard), will not attempt if job advertisement was previously sent).
+5. Input job ad and click "Send" or click "Paste".
 
 ![Example](./Example.png) 
+
